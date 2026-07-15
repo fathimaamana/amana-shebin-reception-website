@@ -1,0 +1,210 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+
+  background:
+    radial-gradient(circle at top, rgba(201, 162, 39, 0.12), transparent 45%),
+    linear-gradient(135deg, #faf7f2 0%, #fffdf9 50%, #f8f3ec 100%);
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+
+  background-image:
+    url("/images/decor/islamic-pattern.png"),
+    radial-gradient(circle at center,
+      rgba(201,162,39,.08),
+      transparent 70%);
+
+  background-size: 500px, cover;
+  background-repeat: repeat, no-repeat;
+
+  opacity: .45;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+  max-width: 900px;
+
+  text-align: center;
+
+  padding: 140px 20px 60px;
+}
+
+.crescent {
+  font-size: 42px;
+  color: #C9A227;
+  margin-bottom: 25px;
+}
+
+.family {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #8D6E63;
+  margin-bottom: 28px;
+}
+
+.name {
+  font-family: "Great Vibes", cursive;
+  font-size: 68px;
+  font-weight: 400;
+  color: #2B2B2B;
+  line-height: 1.08;
+  text-shadow: 0 4px 18px rgba(201,162,39,.15);
+}
+
+.heart {
+  margin: 18px 0;
+  font-size: 30px;
+  color: #C9A227;
+}
+
+.invite {
+  margin-top: 35px;
+
+  color: #555;
+
+  font-size: 20px;
+
+  line-height: 1.9;
+
+  max-width: 650px;
+
+  margin-inline: auto;
+}
+
+.date {
+  margin-top: 28px;
+
+  color: #8B6B3F;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  letter-spacing: 3px;
+
+  text-transform: uppercase;
+}
+
+.button {
+  margin-top: 45px;
+
+  padding: 16px 46px;
+
+  background: transparent;
+
+  color: #2B2B2B;
+
+  border: 2px solid #C9A227;
+
+  border-radius: 40px;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: .35s ease;
+}
+
+.button:hover {
+  background: #C9A227;
+  color: white;
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(201,162,39,.30);
+}
+
+.topFloral{
+  position:absolute;
+  top:0;
+  left:50%;
+  transform:translateX(-50%);
+  width:100%;
+  max-width:900px;
+  z-index:1;
+  pointer-events:none;
+}
+
+.bottomFloral{
+  position:absolute;
+  bottom:0;
+  left:50%;
+  transform:translateX(-50%);
+  width:100%;
+  max-width:900px;
+  z-index:1;
+  pointer-events:none;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width:768px){
+
+  .content{
+    padding:90px 22px 25px;
+  }
+
+  .crescent{
+    font-size:30px;
+    margin-bottom:15px;
+  }
+
+  .family{
+    font-size:11px;
+    letter-spacing:2px;
+    margin-bottom:18px;
+  }
+
+  .name{
+    font-size:42px;
+    line-height:1.05;
+  }
+
+  .heart{
+    margin:12px 0;
+    font-size:22px;
+  }
+
+  .invite{
+    margin-top:18px;
+    font-size:15px;
+    line-height:1.6;
+  }
+
+  .date{
+    margin-top:18px;
+    font-size:12px;
+    letter-spacing:2px;
+  }
+
+  .button{
+    margin-top:28px;
+    width:100%;
+    max-width:250px;
+    padding:14px 28px;
+    font-size:15px;
+  }
+
+  .topFloral{
+    width:115%;
+  }
+
+  .bottomFloral{
+    width:115%;
+  }
+
+}

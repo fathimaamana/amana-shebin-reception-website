@@ -1,0 +1,318 @@
+.container{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+    background: radial-gradient(circle at top,#faf8f3,#f3eee7);
+}
+
+.card{
+
+    width:min(92%,600px);
+
+    background:rgba(255,255,255,.82);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(201,162,39,.18);
+
+    border-radius:34px;
+
+    padding:55px 40px;
+
+    text-align:center;
+
+    box-shadow:0 30px 80px rgba(0,0,0,.08);
+
+    position:relative;
+
+    overflow:hidden;
+
+    animation:fadeUp .9s ease;
+
+}
+
+.card::before{
+
+content:"";
+
+position:absolute;
+
+top:-120px;
+
+left:-120px;
+
+width:240px;
+
+height:240px;
+
+background:
+radial-gradient(circle,
+rgba(201,162,39,.12),
+transparent 70%);
+
+}
+
+.card::after{
+
+content:"";
+
+position:absolute;
+
+bottom:-120px;
+
+right:-120px;
+
+width:240px;
+
+height:240px;
+
+background:
+radial-gradient(circle,
+rgba(201,162,39,.10),
+transparent 70%);
+
+}
+
+.crescent{
+
+font-size:46px;
+
+color:#C9A227;
+
+margin-bottom:18px;
+
+animation:float 4s ease-in-out infinite;
+
+}
+
+.bismillah{
+
+font-size:30px;
+
+font-family:"Amiri",serif;
+
+color:#2C2A29;
+
+margin-bottom:18px;
+
+line-height:1.5;
+
+}
+
+.divider{
+
+width:90px;
+
+height:2px;
+
+margin:20px auto;
+
+background:linear-gradient(
+90deg,
+transparent,
+#C9A227,
+transparent);
+
+opacity:.6;
+
+}
+
+.invited{
+
+font-size:18px;
+
+line-height:1.8;
+
+color:#6d6259;
+
+font-family:"Cormorant Garamond",serif;
+
+font-style:italic;
+
+}
+
+.name{
+
+margin-top:12px;
+
+font-family:"Great Vibes",cursive;
+
+font-size:74px;
+
+font-weight:400;
+
+color:#2C2A29;
+
+line-height:.95;
+
+}
+
+.and{
+
+margin:8px 0;
+
+font-size:36px;
+
+color:#C9A227;
+
+font-family:"Cormorant Garamond",serif;
+
+font-weight:600;
+
+}
+
+.button{
+
+margin-top:35px;
+
+padding:16px 46px;
+
+background:transparent;
+
+border:2px solid #C9A227;
+
+border-radius:50px;
+
+font-size:14px;
+
+letter-spacing:2px;
+
+text-transform:uppercase;
+
+cursor:pointer;
+
+transition:.35s;
+
+color:#2C2A29;
+
+}
+
+.button:hover{
+
+background:#C9A227;
+
+color:white;
+
+transform:translateY(-4px);
+
+box-shadow:0 20px 40px rgba(201,162,39,.30);
+
+}
+
+@keyframes float{
+
+0%,100%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-8px);
+
+}
+
+}
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(35px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+/* ===========================
+   Tablet
+=========================== */
+
+@media(max-width:768px){
+
+.container{
+
+padding:16px;
+
+}
+
+.card{
+
+padding:40px 24px;
+
+border-radius:28px;
+
+}
+
+.crescent{
+
+font-size:36px;
+
+margin-bottom:12px;
+
+}
+
+.bismillah{
+
+font-size:22px;
+
+margin-bottom:12px;
+
+}
+
+.divider{
+
+width:70px;
+
+margin:16px auto;
+
+}
+
+.invited{
+
+font-size:15px;
+
+line-height:1.6;
+
+}
+
+.name{
+
+font-size:58px;
+
+}
+
+.and{
+
+font-size:26px;
+
+margin:4px 0;
+
+}
+
+.button{
+
+width:100%;
+
+margin-top:28px;
+
+padding:14px;
+
+font-size:13px;
+
+}
+
+}
